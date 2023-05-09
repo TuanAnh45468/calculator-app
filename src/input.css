@@ -6,4 +6,19 @@
     body{
         @apply font-league-spartan text-[32px]
     }
+
+}
+
+@layer components{
+    .numberBtn1{
+        @apply w-[60px] h-[64px] bg-light-grayish-orange flex items-center justify-center rounded-lg text-dark-grayish-blue
+    }
+
+    .delResetBtn1{
+        @apply text-white bg-key-bg1 text-xl
+    }
+
+    .equalBtn1{
+        @apply text-white bg-red text-xl
+    }
 }
