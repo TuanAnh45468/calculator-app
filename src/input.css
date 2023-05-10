@@ -22,6 +22,18 @@
         @apply bg-main-bg3
     }
 
+    .header1{
+        @apply text-white
+    }
+
+    .header2{
+        @apply text-dark-grayish-yellow
+    }
+
+    .header3{
+        @apply text-light-yellow
+    }
+
     .toggle1{
         @apply bg-toggle-bg1
     }
@@ -54,6 +66,10 @@
         @apply  bg-toggle-bg2
     }
 
+    .calculation3{
+        @apply  bg-toggle-bg3
+    }
+
     .numberBtn1{
         @apply w-[60px] h-[64px] bg-light-grayish-orange flex items-center justify-center rounded-lg text-dark-grayish-blue border-[4px] border-b-dark-grayish-orange border-t-0 border-x-0
     }
@@ -62,8 +78,12 @@
         @apply w-[60px] h-[64px] bg-light-grayish-yellow flex items-center justify-center rounded-lg text-dark-grayish-yellow border-[4px] border-b-grayish-orange border-t-0 border-x-0
     }
 
+    .numberBtn3{
+        @apply w-[60px] h-[64px] bg-very-dark-violet flex items-center justify-center rounded-lg text-light-yellow border-[4px] border-b-dark-violet border-t-0 border-x-0
+    }
+
     .delResetBtn1{
-        @apply text-white bg-key-bg1 text-xl border-[4px] border-b-dark-desaturated-blue border-t-0 border-x-0
+        @apply text-white bg-key-bg1 text-xl border-[4px] border-b-very-dark-desaturated-blue border-t-0 border-x-0
     }
 
     .delResetBtn2{
@@ -71,7 +91,7 @@
     }
 
     .delResetBtn3{
-        @apply text-white bg-key-bg3 text-xl
+        @apply text-white bg-key-bg3 text-xl border-[4px] border-t-0 border-x-0 border-b-dark-magenta
     }
 
     .equalBtn1{
@@ -82,11 +102,7 @@
         @apply text-white bg-orange text-xl border-[4px] border-b-dark-orange border-t-0 border-x-0
     }
 
-    .header1{
-        @apply text-white
-    }
-
-    .header2{
-        @apply text-dark-grayish-yellow
+    .equalBtn3{
+        @apply text-white bg-pure-cyan text-xl border-[4px] border-b-dark-cyan border-t-0 border-x-0
     }
 }
