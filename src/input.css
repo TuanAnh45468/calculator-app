@@ -10,15 +10,83 @@
 }
 
 @layer components{
+    .body1{
+    @apply bg-main-bg1
+    }
+
+    .body2{
+        @apply bg-main-bg2
+    }
+
+    .body3{
+        @apply bg-main-bg3
+    }
+
+    .toggle1{
+        @apply bg-toggle-bg1
+    }
+
+    .toggle2{
+        @apply bg-toggle-bg2
+    }
+
+    .toggle3{
+        @apply bg-toggle-bg3
+    }
+
+    .resultSection1{
+        @apply text-white bg-screen-bg1
+    }
+
+    .resultSection2{
+        @apply text-dark-grayish-yellow bg-screen-bg2
+    }
+
+    .resultSection3{
+        @apply text-light-yellow bg-screen-bg3
+    }
+
+    .calculation1{
+        @apply  bg-toggle-bg1
+    }
+
+    .calculation2{
+        @apply  bg-toggle-bg2
+    }
+
     .numberBtn1{
-        @apply w-[60px] h-[64px] bg-light-grayish-orange flex items-center justify-center rounded-lg text-dark-grayish-blue
+        @apply w-[60px] h-[64px] bg-light-grayish-orange flex items-center justify-center rounded-lg text-dark-grayish-blue border-[4px] border-b-dark-grayish-orange border-t-0 border-x-0
+    }
+
+    .numberBtn2{
+        @apply w-[60px] h-[64px] bg-light-grayish-yellow flex items-center justify-center rounded-lg text-dark-grayish-yellow border-[4px] border-b-grayish-orange border-t-0 border-x-0
     }
 
     .delResetBtn1{
-        @apply text-white bg-key-bg1 text-xl
+        @apply text-white bg-key-bg1 text-xl border-[4px] border-b-dark-desaturated-blue border-t-0 border-x-0
+    }
+
+    .delResetBtn2{
+        @apply text-white bg-key-bg2 text-xl border-[4px] border-t-0 border-x-0 border-b-dark-cyan
+    }
+
+    .delResetBtn3{
+        @apply text-white bg-key-bg3 text-xl
     }
 
     .equalBtn1{
-        @apply text-white bg-red text-xl
+        @apply text-white bg-red text-xl border-[4px] border-b-dark-red border-t-0 border-x-0
+    }
+
+    .equalBtn2{
+        @apply text-white bg-orange text-xl border-[4px] border-b-dark-orange border-t-0 border-x-0
+    }
+
+    .header1{
+        @apply text-white
+    }
+
+    .header2{
+        @apply text-dark-grayish-yellow
     }
 }

@@ -20,57 +20,77 @@
     <link href="output.css" rel="stylesheet" />
     <title>Frontend Mentor | Calculator app</title>
   </head>
-  <body class="flex flex-col items-center min-h-screen bg-main-bg1">
+  <body class="flex flex-col items-center min-h-screen body1">
     <main class="mobile:w-[327px] my-8 mx-6 flex flex-col">
-      <section class="text-white flex w-full items-end h-[42px] mobile:mb-8">
+      <section class="flex w-full items-end h-[42px] mobile:mb-8 header1">
         <span class="mt-auto"> calc </span>
-        <span class="uppercase text-xs ml-auto">theme</span>
-          <div class="flex relative ml-auto">
-            <label for="theme-switch"></label>
-            <input class="switch range w-[71px] rounded-full h-[26px] bg-toggle-bg1 appearance-none outline-none" id="theme-switch" max="3" min="1" type="range" value="1" />
-            <div class="absolute left-0 top-[-19px] h-6 w-full flex items-center justify-between px-2">
-              <span class="text-xs">1</span>
-              <span class="text-xs">2</span>
-              <span class="text-xs">3</span>
-            </div>
+        <span class="uppercase text-xs ml-auto mr-3">theme</span>
+
+        <div class="flex relative">
+          <label for="theme-switch"></label>
+          <input
+            aria-label="switch theme"
+            class="switch range px-1 w-[71px] rounded-full h-[26px] toggle1 appearance-none outline-none"
+            id="theme-switch"
+            max="3"
+            min="1"
+            type="range"
+            value="1"
+          />
+          <div
+            class="absolute left-[1px] top-[-19px] h-6 w-full flex items-center justify-between px-2"
+          >
+            <span class="text-xs">1</span>
+            <span class="text-xs">2</span>
+            <span class="text-xs">3</span>
           </div>
+        </div>
       </section>
 
-      <section class="mobile:mb-6 w-full text-white flex items-center justify-end rounded-xl bg-screen-bg1 h-[88px]">399, 981</section>
+      <section
+        class="mobile:mb-6 w-full flex items-center justify-end rounded-xl h-[88px] resultSection1"
+      >
+        399, 981
+      </section>
 
-      <section class="h-[420px] w-full bg-screen-bg1 rounded-xl grid items-center grid-cols-4 px-6 py-6">
+      <section
+        class="h-[420px] w-full rounded-xl grid items-center grid-cols-4 px-6 py-6 calculation1"
+      >
         <div class="col-start-1 col-span-4 flex justify-between">
-          <span class="numberBtn1">7</span>
-          <span class="numberBtn1">8</span>
-          <span class="numberBtn1">9</span>
-          <span class="numberBtn1 delResetBtn1">DEL</span>
+          <button class="numberBtn1">7</button>
+          <button class="numberBtn1">8</button>
+          <button class="numberBtn1">9</button>
+          <button class="numberBtn1 delResetBtn1">DEL</button>
         </div>
 
         <div class="col-start-1 col-span-4 flex justify-between">
-          <span class="numberBtn1">4</span>
-          <span class="numberBtn1">5</span>
-          <span class="numberBtn1">6</span>
-          <span class="numberBtn1">+</span>
+          <button class="numberBtn1">4</button>
+          <button class="numberBtn1">5</button>
+          <button class="numberBtn1">6</button>
+          <button class="numberBtn1">+</button>
         </div>
 
         <div class="col-start-1 col-span-4 flex justify-between">
-          <span class="numberBtn1">1</span>
-          <span class="numberBtn1">2</span>
-          <span class="numberBtn1">3</span>
-          <span class="numberBtn1">-</span>
+          <button class="numberBtn1">1</button>
+          <button class="numberBtn1">2</button>
+          <button class="numberBtn1">3</button>
+          <button class="numberBtn1">-</button>
         </div>
 
         <div class="col-start-1 col-span-4 flex justify-between">
-          <span class="numberBtn1">.</span>
-          <span class="numberBtn1">0</span>
-          <span class="numberBtn1">/</span>
-          <span class="numberBtn1">x</span>
+          <button class="numberBtn1">.</button>
+          <button class="numberBtn1">0</button>
+          <button class="numberBtn1">/</button>
+          <button class="numberBtn1">x</button>
         </div>
         <div class="col-start-1 col-span-4 flex justify-between">
-          <button class="numberBtn1 w-[133px] h-[64px] delResetBtn1">RESET</button>
+          <button class="numberBtn1 w-[133px] h-[64px] delResetBtn1">
+            RESET
+          </button>
           <button class="numberBtn1 w-[133px] h-[64px] equalBtn1">=</button>
         </div>
       </section>
     </main>
+    <script src="main.js"></script>
   </body>
 </html>

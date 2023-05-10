@@ -13,8 +13,11 @@ module.exports = {
       "dark-grayish-orange": "hsl(35, 11%, 61%)",
       "pure-cyan": "hsl(176, 100%, 44%)",
       "soft-cyan": "hsl(177, 92%, 70%)",
+      "moderate-cyan": "hsl(185, 42%, 37%)",
+      "dark-cyan": "hsl(185, 58%, 25%)",
       "very-dark-violet": "hsl(268, 47%, 21%)",
       "dark-magenta": "hsl(290, 70%, 36%)",
+      "dark-desaturated-blue": "hsl(223, 31%, 20%)",
     },
     screens: {
       mobile: "375px",
