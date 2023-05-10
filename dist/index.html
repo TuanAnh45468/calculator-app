@@ -18,6 +18,7 @@
       rel="stylesheet"
     />
     <link href="output.css" rel="stylesheet" />
+<!--    <link href="build.css" rel="stylesheet">-->
     <title>Frontend Mentor | Calculator app</title>
   </head>
   <body class="flex flex-col items-center min-h-screen body1">
@@ -60,31 +61,31 @@
           <button class="numberBtn1">7</button>
           <button class="numberBtn1">8</button>
           <button class="numberBtn1">9</button>
-          <button class="numberBtn1 delResetBtn1">DEL</button>
+          <button class="numberBtn1 delResetBtn1" id="delBtn">DEL</button>
         </div>
 
         <div class="col-start-1 col-span-4 flex justify-between">
           <button class="numberBtn1">4</button>
           <button class="numberBtn1">5</button>
           <button class="numberBtn1">6</button>
-          <button class="numberBtn1">+</button>
+          <button class="numberBtn1 operatorBtn">+</button>
         </div>
 
         <div class="col-start-1 col-span-4 flex justify-between">
           <button class="numberBtn1">1</button>
           <button class="numberBtn1">2</button>
           <button class="numberBtn1">3</button>
-          <button class="numberBtn1">-</button>
+          <button class="numberBtn1 operatorBtn">-</button>
         </div>
 
         <div class="col-start-1 col-span-4 flex justify-between">
           <button class="numberBtn1">.</button>
           <button class="numberBtn1">0</button>
-          <button class="numberBtn1">/</button>
-          <button class="numberBtn1">x</button>
+          <button class="numberBtn1 operatorBtn">/</button>
+          <button class="numberBtn1 operatorBtn">x</button>
         </div>
         <div class="col-start-1 col-span-4 flex justify-between">
-          <button class="numberBtn1 w-[133px] h-[64px] delResetBtn1">
+          <button class="numberBtn1 w-[133px] h-[64px] delResetBtn1" id="resetBtn">
             RESET
           </button>
           <button class="numberBtn1 w-[133px] h-[64px] equalBtn1">=</button>
