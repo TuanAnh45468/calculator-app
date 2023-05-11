@@ -71,38 +71,38 @@
     }
 
     .numberBtn1{
-        @apply w-[60px] h-[64px] bg-light-grayish-orange flex items-center justify-center rounded-lg text-dark-grayish-blue border-[4px] border-b-dark-grayish-orange border-t-0 border-x-0
+        @apply w-[60px] laptop:w-[101px] h-[64px] bg-light-grayish-orange hover:bg-dark-grayish-orange flex items-center justify-center rounded-lg text-dark-grayish-blue border-[4px] border-b-dark-grayish-orange border-t-0 border-x-0
     }
 
     .numberBtn2{
-        @apply w-[60px] h-[64px] bg-light-grayish-yellow flex items-center justify-center rounded-lg text-dark-grayish-yellow border-[4px] border-b-grayish-orange border-t-0 border-x-0
+        @apply w-[60px] laptop:w-[101px] h-[64px] bg-light-grayish-yellow hover:bg-dark-grayish-yellow flex items-center justify-center rounded-lg text-dark-grayish-yellow border-[4px] border-b-grayish-orange border-t-0 border-x-0
     }
 
     .numberBtn3{
-        @apply w-[60px] h-[64px] bg-very-dark-violet flex items-center justify-center rounded-lg text-light-yellow border-[4px] border-b-dark-violet border-t-0 border-x-0
+        @apply w-[60px] laptop:w-[101px] h-[64px] bg-very-dark-violet hover:bg-dark-violet flex items-center justify-center rounded-lg text-light-yellow border-[4px] border-b-dark-violet border-t-0 border-x-0
     }
 
     .delResetBtn1{
-        @apply text-white bg-key-bg1 text-xl border-[4px] border-b-very-dark-desaturated-blue border-t-0 border-x-0
+        @apply text-white bg-key-bg1 hover:bg-light-desaturated-blue text-xl border-[4px] border-b-very-dark-desaturated-blue border-t-0 border-x-0
     }
 
     .delResetBtn2{
-        @apply text-white bg-key-bg2 text-xl border-[4px] border-t-0 border-x-0 border-b-dark-cyan
+        @apply text-white bg-key-bg2 hover:bg-pure-cyan text-xl border-[4px] border-t-0 border-x-0 border-b-dark-cyan
     }
 
     .delResetBtn3{
-        @apply text-white bg-key-bg3 text-xl border-[4px] border-t-0 border-x-0 border-b-dark-magenta
+        @apply text-white bg-key-bg3 hover:bg-dark-magenta text-xl border-[4px] border-t-0 border-x-0 border-b-dark-magenta
     }
 
     .equalBtn1{
-        @apply text-white bg-red text-xl border-[4px] border-b-dark-red border-t-0 border-x-0
+        @apply text-white bg-red hover:bg-light-red text-xl border-[4px] border-b-dark-red border-t-0 border-x-0
     }
 
     .equalBtn2{
-        @apply text-white bg-orange text-xl border-[4px] border-b-dark-orange border-t-0 border-x-0
+        @apply text-white bg-orange hover:bg-light-orange text-xl border-[4px] border-b-dark-orange border-t-0 border-x-0
     }
 
     .equalBtn3{
-        @apply text-white bg-pure-cyan text-xl border-[4px] border-b-dark-cyan border-t-0 border-x-0
+        @apply text-dark-grayish-blue bg-pure-cyan hover:bg-soft-cyan text-xl border-[4px] border-b-dark-cyan border-t-0 border-x-0
     }
 }

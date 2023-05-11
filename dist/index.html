@@ -22,7 +22,7 @@
     <title>Frontend Mentor | Calculator app</title>
   </head>
   <body class="flex flex-col items-center min-h-screen body1">
-    <main class="mobile:w-[327px] my-8 mx-6 flex flex-col">
+    <main class="mobile:w-[327px] laptop:w-[540px] laptop:h-[708px] my-8 mx-6 flex flex-col">
       <section class="flex w-full items-end h-[42px] mobile:mb-8 header1">
         <span class="mt-auto"> calc </span>
         <span class="uppercase text-xs ml-auto mr-3">theme</span>
@@ -49,19 +49,19 @@
       </section>
 
       <section
-        class="mobile:mb-6 w-full flex items-center justify-end rounded-xl h-[88px] resultSection1"
+        class="mobile:mb-6 w-full flex laptop:text-[56px] items-center justify-end rounded-xl h-[88px] laptop:h-[128px] resultSection1"
       >
         399, 981
       </section>
 
       <section
-        class="h-[420px] w-full rounded-xl grid items-center grid-cols-4 px-6 py-6 calculation1"
+        class="h-[420px] laptop:h-[480px] laptop:text-[40px] w-full rounded-xl grid items-center grid-cols-4 px-6 py-6 calculation1"
       >
         <div class="col-start-1 col-span-4 flex justify-between">
           <button class="numberBtn1">7</button>
           <button class="numberBtn1">8</button>
           <button class="numberBtn1">9</button>
-          <button class="numberBtn1 delResetBtn1" id="delBtn">DEL</button>
+          <button class="numberBtn1 delResetBtn1 laptop:text-[28px]" id="delBtn">DEL</button>
         </div>
 
         <div class="col-start-1 col-span-4 flex justify-between">
@@ -85,10 +85,10 @@
           <button class="numberBtn1 operatorBtn">x</button>
         </div>
         <div class="col-start-1 col-span-4 flex justify-between">
-          <button class="numberBtn1 w-[133px] h-[64px] delResetBtn1" id="resetBtn">
+          <button class="numberBtn1 w-[133px] laptop:w-[227px] laptop:text-[28px] h-[64px] delResetBtn1" id="resetBtn">
             RESET
           </button>
-          <button class="numberBtn1 w-[133px] h-[64px] equalBtn1">=</button>
+          <button class="numberBtn1 w-[133px] laptop:w-[227px] laptop:text-[28px] h-[64px] equalBtn1">=</button>
         </div>
       </section>
     </main>

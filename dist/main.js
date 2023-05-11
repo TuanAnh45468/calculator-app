@@ -1,3 +1,6 @@
+const THEME_SUFFIXES = ["2", "3"];
+const OPERATORS = ["+", "-", "x", "/"];
+
 const themeSwitch = document.getElementById("theme-switch");
 const delResetBtns = document.getElementsByClassName("delResetBtn1");
 const numberBtns = document.getElementsByClassName("numberBtn1");
@@ -10,13 +13,17 @@ const calculation = document.querySelector(".calculation1");
 const delBtn = document.getElementById("delBtn");
 const resetBtn = document.getElementById("resetBtn");
 
+let currentNumber = "";
+let nextNumber = "";
+let operator = null;
+let result;
+
 function updateTheme(themeValue) {
-  const themeSuffixes = ["2", "3"];
-  const currentThemeSuffix = themeSuffixes.includes(themeValue)
+  const currentThemeSuffix = THEME_SUFFIXES.includes(themeValue)
     ? themeValue
     : "";
 
-  for (let suffix of themeSuffixes) {
+  for (let suffix of THEME_SUFFIXES) {
     const isCurrentTheme = suffix === currentThemeSuffix;
 
     for (let btn of delResetBtns) {
@@ -35,36 +42,30 @@ function updateTheme(themeValue) {
     calculation.classList.toggle(`calculation${suffix}`, isCurrentTheme);
   }
 }
+updateTheme(themeSwitch.value);
 themeSwitch.addEventListener("input", () => {
   updateTheme(themeSwitch.value);
 });
 
-let currentNumber = "";
-let nextNumber = "";
-let operatorArr = ["+", "-", "x", "/"];
-let operator = null;
-let result;
-
 function performCalculation() {
-  console.log("perform current", currentNumber);
-  console.log("perform next", nextNumber);
-  console.log("operator:", operator);
+  const a = Number(currentNumber);
+  const b = Number(nextNumber);
   switch (operator) {
     case "+":
-      result = Number(currentNumber) + Number(nextNumber);
+      result = a + b;
       break;
     case "-":
-      result = Number(currentNumber) - Number(nextNumber);
+      result = a - b;
       break;
     case "x":
-      result = Number(currentNumber) * Number(nextNumber);
+      result = a * b;
       break;
     case "/":
       if (nextNumber === "0") {
         alert("Cannot divide by zero");
         return;
       }
-      result = Number(currentNumber) / Number(nextNumber);
+      result = a / b;
       break;
     default:
       return;
@@ -87,15 +88,13 @@ function displayResult() {
 for (let btn of numberBtns) {
   btn.addEventListener("click", (event) => {
     const value = event.target.textContent;
-    if (!operatorArr.includes(value) && !operator && value !== "DEL") {
+    if (!OPERATORS.includes(value) && !operator && value !== "DEL") {
       currentNumber += value;
-    } else if (operatorArr.includes(value)) {
+    } else if (OPERATORS.includes(value)) {
       operator = value;
     } else if (operator && value !== "=" && value !== "DEL") {
       nextNumber += value;
     }
-    console.log("current number: ", currentNumber);
-    console.log("next number: ", nextNumber);
     updateDisplay();
   });
 }

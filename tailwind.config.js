@@ -4,12 +4,15 @@ module.exports = {
   theme: {
     colors: {
       red: "hsl(6, 63%, 50%)",
+      "light-red": "hsl(6, 63%, 60%)",
       "dark-red": "hsl(6, 70%, 34%)",
       orange: "hsl(25, 98%, 40%)",
+      "light-orange": "hsl(25, 98%, 50%)",
       "dark-orange": "hsl(25, 99%, 27%)",
       "light-grayish-orange": "hsl(30, 25%, 89%)",
       "grayish-orange": "hsl(28, 16%, 65%)",
       "light-grayish-yellow": "hsl(45, 7%, 89%)",
+      "dark-grayish-yellow": "hsl(45, 7%, 79%)",
       "dark-grayish-orange": "hsl(35, 11%, 61%)",
       "pure-cyan": "hsl(176, 100%, 44%)",
       "soft-cyan": "hsl(177, 92%, 70%)",
@@ -18,6 +21,7 @@ module.exports = {
       "dark-violet": "hsl(281, 89%, 26%)",
       "very-dark-violet": "hsl(268, 47%, 21%)",
       "dark-magenta": "hsl(290, 70%, 36%)",
+      "light-desaturated-blue": "hsl(224, 28%, 45%)",
       "dark-desaturated-blue": "hsl(223, 31%, 20%)",
       "very-dark-desaturated-blue": "hsl(224, 28%, 35%)",
     },
