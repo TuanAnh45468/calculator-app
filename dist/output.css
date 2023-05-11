@@ -938,10 +938,6 @@ body {
   justify-content: flex-end;
 }
 
-.justify-center {
-  justify-content: center;
-}
-
 .justify-between {
   justify-content: space-between;
 }
@@ -1003,14 +999,14 @@ body {
 }
 
 @media (min-width: 1440px) {
-  .laptop\:my-\[96px\] {
-    margin-top: 96px;
-    margin-bottom: 96px;
-  }
-
   .laptop\:mx-\[450px\] {
     margin-left: 450px;
     margin-right: 450px;
+  }
+
+  .laptop\:my-\[96px\] {
+    margin-top: 96px;
+    margin-bottom: 96px;
   }
 
   .laptop\:h-\[128px\] {
