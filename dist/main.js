@@ -87,14 +87,15 @@ function displayResult() {
 for (let btn of numberBtns) {
   btn.addEventListener("click", (event) => {
     const value = event.target.textContent;
-    console.log(value);
-    if (!operatorArr.includes(value) && !operator) {
+    if (!operatorArr.includes(value) && !operator && value !== "DEL") {
       currentNumber += value;
     } else if (operatorArr.includes(value)) {
       operator = value;
-    } else if (operator && value !== "=") {
+    } else if (operator && value !== "=" && value !== "DEL") {
       nextNumber += value;
     }
+    console.log("current number: ", currentNumber);
+    console.log("next number: ", nextNumber);
     updateDisplay();
   });
 }
@@ -125,5 +126,18 @@ resetBtn.addEventListener("click", () => {
   currentNumber = "";
   nextNumber = "";
   operator = null;
+  updateDisplay();
+});
+
+delBtn.addEventListener("click", () => {
+  if (nextNumber) {
+    nextNumber = nextNumber.slice(0, -1);
+  } else if (!nextNumber && operator) {
+    operator = operator.slice(0, -1);
+  } else if (!operator && !nextNumber) {
+    currentNumber = currentNumber.slice(0, -1);
+  } else if (result) {
+    result = result.slice(0, -1);
+  }
   updateDisplay();
 });
