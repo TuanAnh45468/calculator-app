@@ -1,6 +1,24 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./dist/**/*.{html,js}"],
+  safelist: [
+    "body2",
+    "body3",
+    "header2",
+    "header3",
+    "toggle2",
+    "toggle3",
+    "resultSection2",
+    "resultSection3",
+    "calculation2",
+    "calculation3",
+    "numberBtn2",
+    "numberBtn3",
+    "delResetBtn2",
+    "delResetBtn3",
+    "equalBtn2",
+    "equalBtn3",
+  ],
   theme: {
     colors: {
       red: "hsl(6, 63%, 50%)",
